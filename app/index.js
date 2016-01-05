@@ -8,10 +8,11 @@ app.use(morgan('dev'));
 
 var pathToIndexHTML = path.join(__dirname, '../', './views/index.html');
 
+
 app.use(express.static(path.join(__dirname, '../public')));
 app.use(express.static(path.join(__dirname, '../node_modules')));
+
 
 app.get('/', function (req, res, next) {
   res.sendFile(pathToIndexHTML);
 });
-

@@ -1,0 +1,25 @@
+.foot {
+  background-color: #282828;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: 5vh;
+}
+
+.foot ul {
+  padding: 0;
+  margin: 7px auto;
+}
+
+.foot li {
+  display: inline;
+  margin: 0px 15px;
+}
+
+
+.foot i {
+  font-size: 3vh;
+  opacity: 0.9;
+  display: inline;
+}
+

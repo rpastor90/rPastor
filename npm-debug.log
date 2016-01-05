@@ -1,0 +1,103 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'bootstrap.icon-large.min.css' ]
+2 info using npm@2.10.1
+3 info using node@v0.12.4
+4 verbose node symlink /usr/local/bin/node
+5 verbose install initial load of /Users/lizpastor/Desktop/juniorPhase/personalSite/package.json
+6 warn package.json personal_site@1.0.0 No description
+7 warn package.json personal_site@1.0.0 No repository field.
+8 warn package.json personal_site@1.0.0 No README data
+9 verbose installManyTop reading scoped package data from /Users/lizpastor/Desktop/juniorPhase/personalSite/node_modules/angular/package.json
+10 verbose installManyTop reading scoped package data from /Users/lizpastor/Desktop/juniorPhase/personalSite/node_modules/angular-ui-router/package.json
+11 verbose installManyTop reading scoped package data from /Users/lizpastor/Desktop/juniorPhase/personalSite/node_modules/bluebird/package.json
+12 verbose installManyTop reading scoped package data from /Users/lizpastor/Desktop/juniorPhase/personalSite/node_modules/body-parser/package.json
+13 verbose installManyTop reading scoped package data from /Users/lizpastor/Desktop/juniorPhase/personalSite/node_modules/bootstrap/package.json
+14 verbose installManyTop reading scoped package data from /Users/lizpastor/Desktop/juniorPhase/personalSite/node_modules/express/package.json
+15 verbose installManyTop reading scoped package data from /Users/lizpastor/Desktop/juniorPhase/personalSite/node_modules/jquery/package.json
+16 verbose installManyTop reading scoped package data from /Users/lizpastor/Desktop/juniorPhase/personalSite/node_modules/mongoose/package.json
+17 verbose installManyTop reading scoped package data from /Users/lizpastor/Desktop/juniorPhase/personalSite/node_modules/morgan/package.json
+18 verbose installManyTop reading scoped package data from /Users/lizpastor/Desktop/juniorPhase/personalSite/node_modules/nodemon/package.json
+19 verbose installManyTop reading scoped package data from /Users/lizpastor/Desktop/juniorPhase/personalSite/node_modules/swig/package.json
+20 info package.json jquery@2.1.4 No license field.
+21 info package.json angular-ui-router@0.2.15 No license field.
+22 verbose readDependencies loading dependencies from /Users/lizpastor/Desktop/juniorPhase/personalSite/package.json
+23 silly cache add args [ 'bootstrap.icon-large.min.css', null ]
+24 verbose cache add spec bootstrap.icon-large.min.css
+25 silly cache add parsed spec { raw: 'bootstrap.icon-large.min.css',
+25 silly cache add   scope: null,
+25 silly cache add   name: 'bootstrap.icon-large.min.css',
+25 silly cache add   rawSpec: '',
+25 silly cache add   spec: '*',
+25 silly cache add   type: 'range' }
+26 silly addNamed bootstrap.icon-large.min.css@*
+27 verbose addNamed "*" is a valid semver range for bootstrap.icon-large.min.css
+28 silly addNameRange { name: 'bootstrap.icon-large.min.css',
+28 silly addNameRange   range: '*',
+28 silly addNameRange   hasData: false }
+29 silly mapToRegistry name bootstrap.icon-large.min.css
+30 silly mapToRegistry using default registry
+31 silly mapToRegistry registry https://registry.npmjs.org/
+32 silly mapToRegistry uri https://registry.npmjs.org/bootstrap.icon-large.min.css
+33 verbose addNameRange registry:https://registry.npmjs.org/bootstrap.icon-large.min.css not in flight; fetching
+34 verbose request uri https://registry.npmjs.org/bootstrap.icon-large.min.css
+35 verbose request no auth needed
+36 info attempt registry request try #1 at 19:04:48
+37 verbose request id 7b63fdd33bc73cb7
+38 http request GET https://registry.npmjs.org/bootstrap.icon-large.min.css
+39 http 404 https://registry.npmjs.org/bootstrap.icon-large.min.css
+40 verbose headers { 'content-type': 'application/json',
+40 verbose headers   'cache-control': 'max-age=0',
+40 verbose headers   'content-length': '2',
+40 verbose headers   'accept-ranges': 'bytes',
+40 verbose headers   date: 'Thu, 31 Dec 2015 00:04:49 GMT',
+40 verbose headers   via: '1.1 varnish',
+40 verbose headers   age: '0',
+40 verbose headers   connection: 'keep-alive',
+40 verbose headers   'x-served-by': 'cache-jfk1037-JFK',
+40 verbose headers   'x-cache': 'MISS',
+40 verbose headers   'x-cache-hits': '0',
+40 verbose headers   'x-timer': 'S1451520289.582147,VS0,VE23' }
+41 silly get cb [ 404,
+41 silly get   { 'content-type': 'application/json',
+41 silly get     'cache-control': 'max-age=0',
+41 silly get     'content-length': '2',
+41 silly get     'accept-ranges': 'bytes',
+41 silly get     date: 'Thu, 31 Dec 2015 00:04:49 GMT',
+41 silly get     via: '1.1 varnish',
+41 silly get     age: '0',
+41 silly get     connection: 'keep-alive',
+41 silly get     'x-served-by': 'cache-jfk1037-JFK',
+41 silly get     'x-cache': 'MISS',
+41 silly get     'x-cache-hits': '0',
+41 silly get     'x-timer': 'S1451520289.582147,VS0,VE23' } ]
+42 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/bootstrap.icon-large.min.css
+42 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:239:14)
+42 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:170:14)
+42 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:368:22)
+42 verbose stack     at Request.emit (events.js:110:17)
+42 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1219:14)
+42 verbose stack     at Request.emit (events.js:129:20)
+42 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1167:12)
+42 verbose stack     at IncomingMessage.emit (events.js:129:20)
+42 verbose stack     at _stream_readable.js:908:16
+42 verbose stack     at process._tickCallback (node.js:355:11)
+43 verbose statusCode 404
+44 verbose pkgid bootstrap.icon-large.min.css
+45 verbose cwd /Users/lizpastor/Desktop/juniorPhase/personalSite
+46 error Darwin 14.5.0
+47 error argv "node" "/usr/local/bin/npm" "install" "bootstrap.icon-large.min.css"
+48 error node v0.12.4
+49 error npm  v2.10.1
+50 error code E404
+51 error 404 Registry returned 404 for GET on https://registry.npmjs.org/bootstrap.icon-large.min.css
+51 error 404
+51 error 404 'bootstrap.icon-large.min.css' is not in the npm registry.
+51 error 404 You should bug the author to publish it (or use the name yourself!)
+51 error 404 It was specified as a dependency of 'personal_site'
+51 error 404
+51 error 404 Note that you can also install from a
+51 error 404 tarball, folder, http url, or git url.
+52 verbose exit [ 1, true ]

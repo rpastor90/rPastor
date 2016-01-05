@@ -3,77 +3,42 @@
 <head>
     <meta charset="UTF-8"/>
     <title>Rafiel Pastor</title>
-    <link rel="stylesheet" type="text/css" href="/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.2.3/css/simple-line-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/animatecss/3.5.1/animate.min.css">
+
     <link rel="stylesheet" type="text/css" href="/css/style.css"/>
-    <script src="/angular/angular.js"></script>
-    <script src="/angular-ui-router/release/angular-ui-router.js"></script>
-    <script src="/app/app.js" defer></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-animate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+    <script src="/browser/app.js" defer></script>
+
+    <script src="/browser/codeAcademy/codeAcademy.js" defer></script>
+    <script src="/browser/footer/footer.js" defer></script>
+    <script src="/browser/xanga/xanga.js" defer></script>
 </head>
+
 <body ng-app="resume">
 
-  <div class="navbar navbar-inverse" id="navigation">
-    <div class="row">
-      <div class="col-xs-6">
-        <ul>
-          <li><a href='/'>Home</a></li>
-          <li><a href='/resume'>Resume</a></li>
-          <li><a href='/blog'>Blog</a></li>
-        </ul>
-      </div>
-      <div class="col-xs-6">
-        <h3>Rafiel's Resume Website</h3>
-      </div>
+  <div class="navbar navbar-fixed-top">
+    <h3>Time Line <br> To More Success</h3>
+    <div class="scroll-target">
+       <ul>
+        <li><a ui-sref="xanga">Xanga</a></li>
+        <!-- <li><a href="#main">Main</a></li> -->
+        <li><a ui-sref="codeAcademy">Code Academy Site</a></li>
+        <!-- <li><a href="#the-footer">Find Me</a></li> -->
+      </ul>
     </div>
   </div>
 
+  <div class="row">
+   <div class="span12 ui-view-container">
+      <div class="well" ui-view></div>        
+   </div>
+  </div> 
 
-  <main class="container">
-    <!-- <img src="" /> -->
-    <div class="row">
-      <div class="col-xs-2" id="sideBar">
-        <h3>NAVIGATION</h3>
-          <ul>
-            <p><a ui-sref="experience">MORE</a></p>
-            <p><a ui-sref="experience">MORE</a></p>
-            <p><a ui-sref="experience">MORE</a></p>
-            <p><a ui-sref="experience">MORE</a></p>
-            <p><a ui-sref="experience">MORE</a></p>
-          </ul>
-      </div>
+  <the-footer></the-footer>
 
-
-
-      <div class="col-xs-8" id="main">
-        <div class="row">
-            <span><img src="/images/headShot.jpg" id="selfie"></span>
-            <h1>Rafiel Pastor</h1>
-          <ul>
-            <li>MORE</li>
-            <li>Text</li>
-            <li>Everywhere</li>
-            <li>HERE</li>
-            <li>WEHFIEUW</li>
-          </ul>
-        </div>
-        <div class="row">
-          <h1>MORE TEXT HERE</h1>
-          <ui-view></ui-view>
-        </div>  
-      </div>
-
-
-
-
-      <div class="col-xs-2" id="rightBar">
-        <h3>Find Me</h3>
-        <p><a target="_blank" href="http://blogtechnical.tumblr.com/">Tumblr</a></p>
-        <p><a target="_blank" href="https://www.linkedin.com/in/rafiel-pastor-a4522330">LinkedIn</a></p>
-        <p><a target="_blank" href="https://github.com/rpastor90">GitHub</a></p>
-      </div>
-    </div>
-  </main>
-
-
-  <script src="/jquery/dist/jquery.min.js"></script>
-  <script src="/js/app.js"></script>
 </body>
